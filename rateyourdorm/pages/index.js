@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Search from '../components/search'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,11 +17,7 @@ export default function Home() {
           <div className={styles.heroContent}>
             <h1>Rate Your Dorm</h1>
             <h2>Better university living</h2>
-            <form>
-              <input type="text" placeholder="Search">
-
-              </input>
-            </form>
+            <Search/>
           </div>
         </section>
 
