@@ -16,7 +16,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroContent}>
             <h1>Rate Your Dorm</h1>
-            <h2>Better university living</h2>
+            <h2>Find better campus living for you</h2>
             <Search/>
           </div>
         </section>
