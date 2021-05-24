@@ -1,0 +1,51 @@
+.searchBar input {
+  margin-top: 1em;
+  width: 35%;
+  padding: 0.8em;
+  outline: none;
+  border-radius: 1em;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.searchBar input::placeholder {
+  color: white;
+}
+
+.searchBar a {
+  padding: 0.8rem;
+  color: black;
+  display: block;
+}
+
+.searchBar a:hover {
+  background-color: #EEEEEE;
+  border-radius: 1em;
+}
+
+.searchBarDark input {
+  margin-top: 1em;
+  width: 35%;
+  padding: 0.8em;
+  outline: none;
+  border-radius: 1em;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+}
+
+.searchBarDark input::placeholder {
+  color: black;
+}
+
+.searchBarDark a {
+  padding: 0.8rem;
+  color: black;
+  display: block;
+}
+
+.searchBar a:hover {
+  background-color: #EEEEEE;
+  border-radius: 1em;
+}
