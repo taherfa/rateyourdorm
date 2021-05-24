@@ -1,0 +1,1 @@
+export const UniversityNames = ['University of British Columbia', 'Simon Fraser University', 'British Columbia Institute of Technology']
