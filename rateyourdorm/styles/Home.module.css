@@ -55,7 +55,12 @@
 }
 
 .heroContent a {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding: 0.8rem;
   color: black;
+  display: block;
+}
+
+.heroContent a:hover {
+  background-color: #EEEEEE;
+  border-radius: 1em;
 }

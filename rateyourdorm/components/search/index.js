@@ -2,7 +2,7 @@ import { UniversityNames } from '../../data/UniversityNames'
 
 import React from 'react'
 import { useState } from 'react'
-import Link from '../link/index'
+import Link from 'next/link'
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -20,7 +20,7 @@ const Search = () => {
         value={searchQuery}
         onChange={e => editSearchQuery(e.target.value)} />
       <div style={{ marginTop: '1rem', backgroundColor: 'white', borderRadius: '1em', width: '35%' }}>
-        {dynamicSearch().map(uniName => (<li style={{ color: 'black', listStyleType: 'none', padding: '0.8rem' }}>{uniName}</li>))}
+        {dynamicSearch().map(uniName => (<Link href={`/university/${uniName}`}>{uniName}</Link>))}
       </div>
     </div>
   )
