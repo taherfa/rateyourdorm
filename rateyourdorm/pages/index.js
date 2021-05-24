@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Search from '../components/search'
+import Search from '../components/search/index'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,6 +14,7 @@ export default function Home() {
 
       <main>
         <section className={styles.hero}>
+          <p className={styles.logoTitle}>RateYourDorm</p>
           <div className={styles.heroContent}>
             <h1>Rate Your Dorm</h1>
             <h2>Find better campus living for you</h2>
