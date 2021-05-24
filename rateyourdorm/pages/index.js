@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Search from '../components/search/index'
 import styles from '../styles/Home.module.css'
 
-import Nav from '../components/nav/index'
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -14,7 +12,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <Nav/>
         <section className={styles.hero}>
           <p className={styles.logoTitle}>RateYourDorm</p>
           <div className={styles.heroContent}>

@@ -38,29 +38,3 @@
   font-size: 2rem;
   margin: 0;
 }
-
-.heroContent input {
-  margin-top: 1em;
-  width: 35%;
-  padding: 0.8em;
-  outline: none;
-  border-radius: 1em;
-  border: 2px solid white;
-  background: transparent;
-  color: white;
-}
-
-.heroContent input::placeholder {
-  color: white;
-}
-
-.heroContent a {
-  padding: 0.8rem;
-  color: black;
-  display: block;
-}
-
-.heroContent a:hover {
-  background-color: #EEEEEE;
-  border-radius: 1em;
-}
