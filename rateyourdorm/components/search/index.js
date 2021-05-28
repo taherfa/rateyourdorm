@@ -21,7 +21,7 @@ const Search = () => {
         value={searchQuery}
         onChange={e => editSearchQuery(e.target.value)} />
       <div style={{ marginTop: '1rem', backgroundColor: 'white', borderRadius: '1em', width: '35%' }}>
-        {dynamicSearch().map(uniName => (<Link href={`/university/${uniName}`}>{uniName}</Link>))}
+        {dynamicSearch().map(uniName => (<Link href={`/university/${uniName.toLowerCase().replace(/\s/g, '-')}`}>{uniName}</Link>))}
       </div>
     </div>
   )
