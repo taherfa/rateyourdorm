@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Nav from '../../components/nav/index'
 import styles from '../../styles/University.module.css'
@@ -71,20 +72,22 @@ const University = () => {
 
           {/* Listing */}
           <div>
-            <div className={styles.dorm}>
-              <Image
-                src="/house.jpg"
-                alt="picture of dorm"
-                layout="responsive"
-                width={50}
-                height={50}
-              />
-              <div>
-                <p>Dorm Name - &#9733; 4.7</p>                              
-                <p style={{marginTop: '0.25rem'}}>Address</p>
-                <p style={{marginTop: '1rem'}}>13 Ratings</p>
+            <Link href={`/university/simon-fraser-university/dorm`}>
+              <div className={styles.dorm}>
+                <Image
+                  src="/house.jpg"
+                  alt="picture of dorm"
+                  layout="responsive"
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <p>Dorm Name - &#9733; 4.7</p>
+                  <p style={{ marginTop: '0.25rem' }}>Address</p>
+                  <p style={{ marginTop: '1rem' }}>13 Ratings</p>
+                </div>
               </div>
-            </div>
+            </Link>
             <div className={styles.dorm}>
               <Image
                 src="/house.jpg"
@@ -94,9 +97,9 @@ const University = () => {
                 height={50}
               />
               <div>
-                <p>Dorm Name - &#9733; 4.7</p>                              
+                <p>Dorm Name - &#9733; 4.7</p>
                 <p>Address</p>
-                <p style={{marginTop: '1rem'}}>13 Ratings</p>
+                <p style={{ marginTop: '1rem' }}>13 Ratings</p>
               </div>
             </div>
           </div>
