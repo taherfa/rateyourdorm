@@ -1,0 +1,31 @@
+.form {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  overflow-x: hidden;
+}
+
+.form h1 {
+  margin: 1rem 0 1rem 0;
+}
+
+.form label, .pLabel {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.fineText {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.amenities input {
+  margin-top: 0.4rem;
+}
+
+.amenities label {
+  margin-left: 0.2rem;
+}
+
+.submit {
+  margin: 1rem 0 1rem 0;
+}
