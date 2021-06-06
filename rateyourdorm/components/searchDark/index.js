@@ -14,13 +14,13 @@ const Search = () => {
   const dynamicSearch = () => searchQuery == '' ? [] : UniversityNames.filter(uniName => uniName.toLowerCase().includes(searchQuery.toLowerCase()))
 
   return (
-    <div style={{width: '100%'}} className={styles.searchBarDark}>
+    <div style={{width: '30%'}} className={styles.searchBarDark}>
       <input
         type="text"
         placeholder={searchQuery == '' ? 'Type to search...' : searchQuery}
         value={searchQuery}
         onChange={e => editSearchQuery(e.target.value)}
-        style={{width: '35%'}}/>
+        style={{width: '100%'}}/>
       <div style={{ marginTop: '1rem', backgroundColor: 'white', borderRadius: '1em', position: 'absolute' }}>
         {dynamicSearch().map(uniName => (<Link href={`/university/${uniName.toLowerCase().replace(/\s/g, '-')}`}>{uniName}</Link>))}
       </div>

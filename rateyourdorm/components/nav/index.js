@@ -1,9 +1,11 @@
+import Link from 'next/link'
+
 import Search from '../searchDark/index'
 
 const Nav = () => {
   return (
-    <div style={{marginLeft: '10.4rem', paddingTop: '0.5rem', paddingBottom: '1rem', display: 'flex', alignItems: 'center' }}>
-      <p style={{fontWeight: 'bold', fontSize: '1.4rem', paddingRight: '2rem'}} >RateYourDorm</p>
+    <div style={{ paddingBottom: '1rem', display: 'flex', alignItems: 'center', width: '90%', margin: '0 auto' }}>
+      <Link href={`/`} ><a style={{fontWeight: 'bold', fontSize: '1.4rem', paddingRight: '2rem'}} >RateYourDorm</a></Link>
       <Search/>
     </div>
   )
