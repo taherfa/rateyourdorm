@@ -23,35 +23,51 @@ const University = () => {
       <section className={styles.column}>
         <section className={styles.left}>
           <h3>Filter By</h3>
-          <div>
+          <div className={styles.filterSection}>
             <h4>Amenities</h4>
             <form>
-              <input className={styles.input} type="checkbox" id="air-conditioning" name="amenities" value="air-conditioning"></input>
-              <label for="air-conditioning">Air Conditioning</label><br />
-              <input type="checkbox" id="study-rooms" name="amenities" value="study-rooms"></input>
-              <label for="study-rooms">Study Rooms</label><br />
-              <input type="checkbox" id="dining-hall" name="amenities" value="dining-hall"></input>
-              <label for="dining-hall">Dining Hall</label><br />
-              <input type="checkbox" id="gym" name="amenities" value="gym"></input>
-              <label for="gym">Gym</label><br />
+              <div className={styles.checkboxInput}>
+                <input className={styles.input} type="checkbox" id="air-conditioning" name="amenities" value="air-conditioning"></input>
+                <label for="air-conditioning">Air Conditioning</label>
+              </div>
+              <div className={styles.checkboxInput}>
+                <input type="checkbox" id="study-rooms" name="amenities" value="study-rooms"></input>
+                <label for="study-rooms">Study Rooms</label>
+              </div>
+              <div className={styles.checkboxInput}>
+                <input type="checkbox" id="dining-hall" name="amenities" value="dining-hall"></input>
+                <label for="dining-hall">Dining Hall</label>
+              </div>
+              <div className={styles.checkboxInput}>
+                <input type="checkbox" id="gym" name="amenities" value="gym"></input>
+                <label for="gym">Gym</label>
+              </div>
             </form>
           </div>
 
-          <div>
+          <div className={styles.filterSection}>
             <h4>Room Type</h4>
             <form>
-              <div style={{ padding: 0, margin: 0 }}>
+              <div className={styles.checkboxInput}>
                 <input type="checkbox" id="single" name="room" value="single"></input>
                 <label for="single">Single</label>
               </div>
-              <input type="checkbox" id="double" name="room" value="double"></input>
-              <label for="double">Double</label><br />
-              <input type="checkbox" id="triple" name="room" value="triple"></input>
-              <label for="triple">Triple</label><br />
-              <input type="checkbox" id="quad" name="room" value="quad"></input>
-              <label for="quad">Quad</label><br />
-              <input type="checkbox" id="other" name="room" value="other"></input>
-              <label for="other">Other</label><br />
+              <div className={styles.checkboxInput}>
+                <input type="checkbox" id="double" name="room" value="double"></input>
+                <label for="double">Double</label>
+              </div>
+              <div className={styles.checkboxInput}>
+                <input type="checkbox" id="triple" name="room" value="triple"></input>
+                <label for="triple">Triple</label>
+              </div>
+              <div className={styles.checkboxInput}>
+                <input type="checkbox" id="quad" name="room" value="quad"></input>
+                <label for="quad">Quad</label>
+              </div>
+              <div className={styles.checkboxInput}>
+                <input type="checkbox" id="other" name="room" value="other"></input>
+                <label for="other">Other</label>
+              </div>
             </form>
           </div>
         </section>

@@ -75,14 +75,22 @@ const rate = () => {
 
           <div className={styles.amenities}>
             <p className={styles.pLabel}>Amenities</p>
-            <input type="checkbox" id="air-conditioning" name="amenities" value="air-conditioning"></input>
-            <label className={styles.amenitiesLabel} for="air-conditioning">Air Conditioning</label><br />
-            <input type="checkbox" id="study-rooms" name="amenities" value="study-rooms"></input>
-            <label className={styles.amenitiesLabel} for="study-rooms">Study Rooms</label><br />
-            <input type="checkbox" id="dining-hall" name="amenities" value="dining-hall"></input>
-            <label className={styles.amenitiesLabel} for="dining-hall">Dining Hall</label><br />
-            <input type="checkbox" id="gym" name="amenities" value="gym"></input>
-            <label className={styles.amenitiesLabel} for="gym">Gym</label><br />
+            <div className={styles.checkboxInput}>
+              <input className={styles.input} type="checkbox" id="air-conditioning" name="amenities" value="air-conditioning"></input>
+              <label for="air-conditioning">Air Conditioning</label>
+            </div>
+            <div className={styles.checkboxInput}>
+              <input type="checkbox" id="study-rooms" name="amenities" value="study-rooms"></input>
+              <label for="study-rooms">Study Rooms</label>
+            </div>
+            <div className={styles.checkboxInput}>
+              <input type="checkbox" id="dining-hall" name="amenities" value="dining-hall"></input>
+              <label for="dining-hall">Dining Hall</label>
+            </div>
+            <div className={styles.checkboxInput}>
+              <input type="checkbox" id="gym" name="amenities" value="gym"></input>
+              <label for="gym">Gym</label>
+            </div>
           </div>
 
           <div>
@@ -90,7 +98,7 @@ const rate = () => {
             <input type="text" id="review" name="review" placeholder="Your experience..."></input>
           </div>
 
-          <div className={styles.anon} style={{margin: '2rem 0 1rem 0'}}>
+          <div className={styles.anon} style={{ margin: '2rem 0 1rem 0' }}>
             <input type="radio" id="anon" name="anon" value="true"></input>
             <label for="anon">Post anonymously</label>
           </div>
