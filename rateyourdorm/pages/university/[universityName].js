@@ -77,11 +77,14 @@ const University = () => {
           {/* Header */}
           <div className={styles.dormsHeader}>
             <h3>Dorms</h3>
-            <select name="sort" id="sort">
-              <option value="Name">Name</option>
-              <option value="most-rated">Most Rated</option>
-              <option value="highest-rated">Highest Rated</option>
-            </select>
+            <label className={styles.select} for="slct">
+              <select id="slct" required="required">
+              <option disabled selected value>Sory by</option>
+                <option value="name">Name</option>
+                <option value="most-rated">Most Rated</option>
+                <option value="highest-rated">Highest Rated</option>
+              </select>
+            </label>
           </div>
 
           <hr />
