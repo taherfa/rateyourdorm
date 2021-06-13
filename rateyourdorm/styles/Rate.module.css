@@ -6,24 +6,35 @@
 }
 
 .form h1 {
+  font-size: 2rem;
   margin: 1rem 0 1rem 0;
 }
 
 .form label, .pLabel {
-  margin: 1rem 0 0.5rem 0;
+  font-size: 1.125rem;
+  margin: 2rem 0 1rem 0;
 }
 
 .fineText {
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .amenities input {
-  margin-top: 0.4rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .amenities label {
-  margin-left: 0.2rem;
+  margin-left: 0.25rem;
+  font-size: 1rem;
+}
+
+.anon {
+  margin: 2rem 0 1rem 0;
+}
+
+.anon input {
+  margin-right: 0.5rem;
 }
 
 .submit {

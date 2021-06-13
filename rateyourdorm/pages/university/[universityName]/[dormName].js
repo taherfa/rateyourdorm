@@ -55,7 +55,7 @@ const Dorm = () => {
         {/* Main content */}
         <section className={styles.right}>
           {/* Header */}
-          <div className={styles.dormsHeader}>
+          <div className={styles.reviewsHeader}>
             <h3>Reviews</h3>
           </div>
 

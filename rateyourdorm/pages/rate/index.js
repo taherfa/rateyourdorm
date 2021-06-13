@@ -15,7 +15,7 @@ const rate = () => {
         <form>
 
           <div>
-            <label for="schools" style={{display: 'block'}}>Select your school</label>
+            <label for="schools" style={{ display: 'block' }}>Select your school</label>
             <select name="schools" id="schools">
               <option disabled selected value> -- select an option -- </option>
               <option value="university of british columbia">University of British Columbia</option>
@@ -25,7 +25,7 @@ const rate = () => {
           </div>
 
           <div>
-            <label for="dorms" style={{display: 'block'}}>Select your dorm</label>
+            <label for="dorms" style={{ display: 'block' }}>Select your dorm</label>
             <select name="dorms" id="dorms">
               <option disabled selected value> -- select an option -- </option>
               <option value="orchard commons">Orchard Commons</option>
@@ -36,23 +36,23 @@ const rate = () => {
           </div>
 
           <div>
-            <label style={{display: 'block'}}>Room</label>
+            <label style={{ display: 'block' }}>Room</label>
             <input type="range" id="volume" name="volume"
               min="0" max="5"></input>
           </div>
           <div>
-            <label style={{display: 'block'}}>Building</label>
+            <label style={{ display: 'block' }}>Building</label>
             <input type="range" id="volume" name="volume"
               min="0" max="5"></input>
           </div>
           <div>
-            <label style={{display: 'block'}}>Location</label>
+            <label style={{ display: 'block' }}>Location</label>
             <input type="range" id="volume" name="volume"
               min="0" max="5"></input>
           </div>
 
           <div>
-            <label for="years" style={{display: 'block'}}>Most recent year living here?</label>
+            <label for="years" style={{ display: 'block' }}>Most recent year living here?</label>
             <select name="years" id="years">
               <option disabled selected value> -- select an option -- </option>
               <option value="2021">2021</option>
@@ -62,7 +62,7 @@ const rate = () => {
           </div>
 
           <div>
-            <label for="rooms" style={{display: 'block'}}>What was your room type?</label>
+            <label for="rooms" style={{ display: 'block' }}>What was your room type?</label>
             <select name="rooms" id="rooms">
               <option disabled selected value> -- select an option -- </option>
               <option value="single">Single</option>
@@ -76,24 +76,29 @@ const rate = () => {
           <div className={styles.amenities}>
             <p className={styles.pLabel}>Amenities</p>
             <input type="checkbox" id="air-conditioning" name="amenities" value="air-conditioning"></input>
-            <label for="air-conditioning">Air Conditioning</label><br />
+            <label className={styles.amenitiesLabel} for="air-conditioning">Air Conditioning</label><br />
             <input type="checkbox" id="study-rooms" name="amenities" value="study-rooms"></input>
-            <label for="study-rooms">Study Rooms</label><br />
+            <label className={styles.amenitiesLabel} for="study-rooms">Study Rooms</label><br />
             <input type="checkbox" id="dining-hall" name="amenities" value="dining-hall"></input>
-            <label for="dining-hall">Dining Hall</label><br />
+            <label className={styles.amenitiesLabel} for="dining-hall">Dining Hall</label><br />
             <input type="checkbox" id="gym" name="amenities" value="gym"></input>
-            <label for="gym">Gym</label><br />
+            <label className={styles.amenitiesLabel} for="gym">Gym</label><br />
           </div>
 
           <div>
-            <label for="review" style={{display: 'block'}}>Write a Review</label>
+            <label for="review" style={{ display: 'block' }}>Write a Review</label>
             <input type="text" id="review" name="review" placeholder="Your experience..."></input>
+          </div>
+
+          <div className={styles.anon} style={{margin: '2rem 0 1rem 0'}}>
+            <input type="radio" id="anon" name="anon" value="true"></input>
+            <label for="anon">Post anonymously</label>
           </div>
 
           <button className={styles.submit} type="submit" form="form1" value="Submit">Submit</button>
 
         </form>
-        
+
       </section>
 
     </Fragment>

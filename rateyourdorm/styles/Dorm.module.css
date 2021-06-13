@@ -22,18 +22,13 @@
   padding-top: 8rem;
 }
 
-.heroContent h1 {
-  font-size: 4rem;
-}
 
 .heroContent h2 {
   font-weight: normal;
-  font-size: 2rem;
-  margin: 0;
 }
 
 .heroContent p {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .column {
@@ -44,24 +39,23 @@
 
 .left {
   flex: 30%;
-  padding-top: 2rem;
-}
-
-.left h3 {
-  font-size: 2rem;
+  padding: 2rem 0 2rem 0;
 }
 
 .left div {
-  padding-top: 2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.left h3 {
+  margin: 1rem 0 1rem 0;
 }
 
 .left h4 {
-  font-size: 1.2rem;
-  padding-bottom: 0.5rem;
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 .left li {
-  margin-top: 0.5rem;
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 .right {
@@ -70,10 +64,10 @@
 }
 
 .right h3 {
-  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
 }
 
-.dormsHeader {
+.reviewsHeader {
   padding-bottom: 1rem;
 }
 
