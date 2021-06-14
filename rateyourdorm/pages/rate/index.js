@@ -81,7 +81,7 @@ const rate = () => {
             </div>
           </div>
 
-          <div className={styles.amenities}>
+          <div className={styles.checkboxSection}>
             <p className={styles.pLabel}>Amenities</p>
             <div className={styles.checkboxInput}>
               <input className={styles.input} type="checkbox" id="air-conditioning" name="amenities" value="air-conditioning"></input>
@@ -106,9 +106,11 @@ const rate = () => {
             <input type="text" id="review" name="review" placeholder="Your experience..."></input>
           </div>
 
-          <div className={styles.anon} style={{ margin: '2rem 0 1rem 0' }}>
-            <input type="radio" id="anon" name="anon" value="true"></input>
-            <label for="anon">Post anonymously</label>
+          <div style={{margin: '2rem 0 1rem 0'}} className={`${styles.checkboxSection} ${styles.anon}`}>
+            <div className={styles.checkboxInput}>
+              <input className={styles.input} type="checkbox" id="anon" name="anon" value="true"></input>
+              <label for="anon">Post anonymously</label>
+            </div>
           </div>
 
           <button className={styles.submit} type="submit" form="form1" value="Submit">Submit</button>
