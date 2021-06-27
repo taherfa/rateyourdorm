@@ -27,19 +27,40 @@ const University = () => {
             <h4>Amenities</h4>
             <form>
               <div className={styles.checkboxInput}>
-                <input className={styles.input} type="checkbox" id="air-conditioning" name="amenities" value="air-conditioning"></input>
+                <input
+                  className={styles.input}
+                  type="checkbox"
+                  id="air-conditioning"
+                  name="amenities"
+                  value="air-conditioning"
+                ></input>
                 <label for="air-conditioning">Air Conditioning</label>
               </div>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="study-rooms" name="amenities" value="study-rooms"></input>
+                <input
+                  type="checkbox"
+                  id="study-rooms"
+                  name="amenities"
+                  value="study-rooms"
+                ></input>
                 <label for="study-rooms">Study Rooms</label>
               </div>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="dining-hall" name="amenities" value="dining-hall"></input>
+                <input
+                  type="checkbox"
+                  id="dining-hall"
+                  name="amenities"
+                  value="dining-hall"
+                ></input>
                 <label for="dining-hall">Dining Hall</label>
               </div>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="gym" name="amenities" value="gym"></input>
+                <input
+                  type="checkbox"
+                  id="gym"
+                  name="amenities"
+                  value="gym"
+                ></input>
                 <label for="gym">Gym</label>
               </div>
             </form>
@@ -49,23 +70,48 @@ const University = () => {
             <h4>Room Type</h4>
             <form>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="single" name="room" value="single"></input>
+                <input
+                  type="checkbox"
+                  id="single"
+                  name="room"
+                  value="single"
+                ></input>
                 <label for="single">Single</label>
               </div>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="double" name="room" value="double"></input>
+                <input
+                  type="checkbox"
+                  id="double"
+                  name="room"
+                  value="double"
+                ></input>
                 <label for="double">Double</label>
               </div>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="triple" name="room" value="triple"></input>
+                <input
+                  type="checkbox"
+                  id="triple"
+                  name="room"
+                  value="triple"
+                ></input>
                 <label for="triple">Triple</label>
               </div>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="quad" name="room" value="quad"></input>
+                <input
+                  type="checkbox"
+                  id="quad"
+                  name="room"
+                  value="quad"
+                ></input>
                 <label for="quad">Quad</label>
               </div>
               <div className={styles.checkboxInput}>
-                <input type="checkbox" id="other" name="room" value="other"></input>
+                <input
+                  type="checkbox"
+                  id="other"
+                  name="room"
+                  value="other"
+                ></input>
                 <label for="other">Other</label>
               </div>
             </form>
@@ -79,7 +125,9 @@ const University = () => {
             <h3>Dorms</h3>
             <label className={styles.select} for="slct">
               <select id="slct" required="required">
-              <option disabled selected value>Sory by</option>
+                <option disabled selected value>
+                  Sory by
+                </option>
                 <option value="name">Name</option>
                 <option value="most-rated">Most Rated</option>
                 <option value="highest-rated">Highest Rated</option>
@@ -93,39 +141,41 @@ const University = () => {
           <div>
             <Link href={`/university/simon-fraser-university/dorm`}>
               <div className={styles.dorm}>
-                <Image
-                  src="/house.jpg"
-                  alt="picture of dorm"
-                  layout="responsive"
-                  width={50}
-                  height={50}
-                />
-                <div>
-                  <p>Dorm Name - &#9733; 4.7</p>
-                  <p style={{ marginTop: '0.25rem' }}>Address</p>
-                  <p style={{ marginTop: '1rem' }}>13 Ratings</p>
+                <img src="/house.jpg" alt="picture of dorm" />
+                <div className={styles.dormContent}>
+                  <div>
+                    <h4>
+                      Brock Commons -<span> &#9733; 3.8</span>
+                    </h4>
+                    <p className={styles.address}>
+                      {' '}
+                      6088 Walter Gage Rd, Vancouver, BC V6T 0B4
+                    </p>
+                  </div>
+                  <p className={styles.ratingCount}>13 Ratings</p>
                 </div>
               </div>
             </Link>
-            <div className={styles.dorm}>
-              <Image
-                src="/house.jpg"
-                alt="picture of dorm"
-                layout="responsive"
-                width={50}
-                height={50}
-              />
-              <div>
-                <p>Dorm Name - &#9733; 4.7</p>
-                <p>Address</p>
-                <p style={{ marginTop: '1rem' }}>13 Ratings</p>
+            <Link href={`/university/simon-fraser-university/dorm`}>
+              <div className={styles.dorm}>
+                <img src="/house.jpg" alt="picture of dorm" />
+                <div className={styles.dormContent}>
+                  <div>
+                    <h4>
+                      Brock Commons -<span> &#9733; 3.8</span>
+                    </h4>
+                    <p className={styles.address}>
+                      {' '}
+                      6088 Walter Gage Rd, Vancouver, BC V6T 0B4
+                    </p>
+                  </div>
+                  <p className={styles.ratingCount}>13 Ratings</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
       </section>
-
-
     </Fragment>
   )
 }
