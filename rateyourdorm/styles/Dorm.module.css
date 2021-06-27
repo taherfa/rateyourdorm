@@ -73,13 +73,25 @@
 
 .review {
   margin-top: 1rem;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 0.75rem
+  padding: 1rem 0 1rem 0 ;
+  border-bottom: 1px solid black; 
 }
 
-.reviewTopLine {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+.rating {
+  font-size: 18px;
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.reviewBody {
+  margin: 1.5rem 0 1.5rem 0 !important;
+  line-height: 1.5;
+}
+
+.suffix {
+  color: #808080;
+}
+
+.date {
+  margin: 0.5rem 0 0.5rem 0;
+  color: #808080;
 }

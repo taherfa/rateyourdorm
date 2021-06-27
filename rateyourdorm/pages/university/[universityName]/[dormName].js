@@ -18,8 +18,7 @@ const Dorm = () => {
               <p>Building: Stars 5</p>
               <p>Community: Stars 5</p>
             </div>
-            <div>
-            </div>
+            <div></div>
           </div>
         </div>
       </section>
@@ -64,26 +63,38 @@ const Dorm = () => {
           {/* Listing */}
           <div>
             <div className={styles.review}>
-              <div className={styles.reviewTopLine}>
-                <p>Single Room - 2020</p>
-                <p style={{ paddingRight: '1rem' }}>&#9733; 4.7</p>
-              </div>
-              <p style={{ maxWidth: '90%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <p style={{ marginTop: '1rem' }}>- Anonymous, Sept 4 2021 </p>
+              <h4>
+                Single Room <span className={styles.suffix}>- 2020</span>
+              </h4>
+              <p className={styles.rating}>&#9733; 4.7</p>
+              <p className={styles.reviewBody}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <p className={styles.date}>Sept 4 2021</p>
             </div>
             <div className={styles.review}>
-              <div className={styles.reviewTopLine}>
-                <p>Single Room - 2020</p>
-                <p style={{ paddingRight: '1rem' }}>&#9733; 4.7</p>
-              </div>
-              <p style={{ maxWidth: '90%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <p style={{ marginTop: '1rem' }}>- Anonymous, Sept 4 2021 </p>
+              <h4>
+                Single Room <span className={styles.suffix}>- 2020</span>
+              </h4>
+              <p className={styles.rating}>&#9733; 4.7</p>
+              <p className={styles.reviewBody}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <p className={styles.date}>Sept 4 2021</p>
             </div>
           </div>
         </section>
       </section>
-
-
     </Fragment>
   )
 }

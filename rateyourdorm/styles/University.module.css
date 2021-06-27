@@ -86,6 +86,10 @@
   padding: 1rem;
 }
 
+.dorm:hover {
+  cursor: pointer;
+}
+
 .dorm div {
   padding-left: 1rem;
 }
