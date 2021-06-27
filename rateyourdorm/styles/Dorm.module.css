@@ -60,7 +60,7 @@
 
 .right {
   flex: 70%;
-  padding-top: 2rem;
+  padding: 2rem 0 2rem 0;
 }
 
 .right h3 {
