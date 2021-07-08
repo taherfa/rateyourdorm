@@ -20,7 +20,7 @@ const Search = () => {
         placeholder={searchQuery == '' ? 'Type to search...' : searchQuery}
         value={searchQuery}
         onChange={e => editSearchQuery(e.target.value)} />
-      <div style={{ marginTop: '1rem', backgroundColor: 'white', borderRadius: '1em', width: '35%' }}>
+      <div className={styles.dropDown}>
         {dynamicSearch().map(uniName => (<Link href={`/university/${uniName.toLowerCase().replace(/\s/g, '-')}`}>{uniName}</Link>))}
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { UniversityNames } from '../../data/UniversityNames'
-import styles from '../../styles/Search.module.css'
+import styles from '../../styles/SearchDark.module.css'
 
 import React from 'react'
 import { useState } from 'react'
@@ -14,14 +14,13 @@ const Search = () => {
   const dynamicSearch = () => searchQuery == '' ? [] : UniversityNames.filter(uniName => uniName.toLowerCase().includes(searchQuery.toLowerCase()))
 
   return (
-    <div style={{width: '30%'}} className={styles.searchBarDark}>
+    <div className={styles.searchBar}>
       <input
         type="text"
         placeholder={searchQuery == '' ? 'Type to search...' : searchQuery}
         value={searchQuery}
-        onChange={e => editSearchQuery(e.target.value)}
-        style={{width: '100%'}}/>
-      <div style={{ marginTop: '1rem', backgroundColor: 'white', borderRadius: '1em', position: 'absolute' }}>
+        onChange={e => editSearchQuery(e.target.value)}/>
+      <div className={styles.dropDown}>
         {dynamicSearch().map(uniName => (<Link href={`/university/${uniName.toLowerCase().replace(/\s/g, '-')}`}>{uniName}</Link>))}
       </div>
     </div>

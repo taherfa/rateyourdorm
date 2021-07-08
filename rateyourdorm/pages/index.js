@@ -20,7 +20,7 @@ export default function Home() {
                     </div>
                     <div className={styles.heroContent}>
                         <h1> Rate Your Dorm </h1>
-                        <h2> Find better campus living for you </h2>
+                        <h2> Find your perfect dorm </h2>
                         <Search />
                     </div>
                 </div>

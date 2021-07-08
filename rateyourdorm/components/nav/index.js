@@ -2,10 +2,12 @@ import Link from 'next/link'
 
 import Search from '../searchDark/index'
 
+import styles from '../../styles/Nav.module.css'
+
 const Nav = () => {
   return (
-    <div style={{ paddingBottom: '1rem', display: 'flex', alignItems: 'center', width: '90%', margin: '0 auto' }}>
-      <Link href={`/`} ><a style={{fontWeight: 'bold', fontSize: '1.4rem', paddingRight: '2rem'}} >RateYourDorm</a></Link>
+    <div className={styles.nav}>
+      <Link href={`/`} ><a className={styles.logo} >RateYourDorm</a></Link>
       <Search/>
     </div>
   )

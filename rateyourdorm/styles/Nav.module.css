@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  align-items: baseline;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-right: 2rem;
+}
