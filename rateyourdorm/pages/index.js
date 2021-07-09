@@ -16,7 +16,7 @@ export default function Home() {
                 <div className={styles.width}>
                     <div className={styles.homeNav}>
                         <Link href={`/`}><a> RateYourDorm </a></Link>
-                        <Link href={`/login`}><a>Log In</a></Link>
+                        <Link href={`/signup`}><a>Log In</a></Link>
                     </div>
                     <div className={styles.heroContent}>
                         <h1> Rate Your Dorm </h1>

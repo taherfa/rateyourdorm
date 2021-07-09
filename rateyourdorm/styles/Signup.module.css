@@ -1,0 +1,55 @@
+.outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+
+.content h1 {
+  font-size: 32px;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.content h4 {
+  font-weight: normal;
+}
+
+.link {
+  color: #75b1a9;
+}
+
+.suForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.suForm input {
+  padding: 1em;
+  outline: none;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0.5rem 0 0.5rem 0;
+  border: 0.5px solid #bdc1c6;
+  background-color: #FBFCFC;
+}
+
+.btnWork {
+  width: 80%;
+  padding: 1em;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #75b1a9;
+  color: #ffffff;
+  border-radius: 20px;
+}
